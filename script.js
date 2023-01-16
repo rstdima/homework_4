@@ -9,3 +9,16 @@ function squarePlusCube(x, y) {
    console.log(result)
 }
 squarePlusCube(square, cube);
+
+// Пользователь вводит с клавиатуры число, если ввёл текст, необходимо вывести что значение задано неверно
+
+let numbers = +prompt('Введите число:');
+
+function сheckingNumber() {
+   if (numbers >= 0 || numbers < 0) {
+      console.log(`Вы ввели число ${numbers}`)
+   } else {
+      console.log('Исправьте, значение задано неверно');
+   }
+}
+сheckingNumber();
