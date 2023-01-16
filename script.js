@@ -31,3 +31,22 @@ let salary = (money) => money = money * 0.87; // Вычитаем 13% налог
    
 
 console.log(`Размер заработной платы за вычетом налогов равен ${salary(userMoney)}`);
+
+
+//Пользователь с клавиатуры вводит 3 числа, необходимо создать функцию, которая определяет максимальное значение среди этих чисел
+
+let numberOne = +prompt('Введите первое число:');
+let numberTwo = +prompt('Введите второе число:');
+let numberThree = +prompt('Введите третье число:');
+
+
+function maxNumber(a, b, c) {
+   if(a > b && b > c) {
+      console.log(`максимально число ${max}`);
+   } else if  (b > a && b > c){
+      console.log(`максимальное число ${numberTwo}`);
+   } else {
+      console.log(`максимальное число ${numberThree}`);
+   }
+}
+maxNumber();
